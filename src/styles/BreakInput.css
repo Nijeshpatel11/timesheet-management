@@ -1,0 +1,15 @@
+.break-input {
+    margin-bottom: 10px;
+  }
+  
+  .break-input label {
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .break-input input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  

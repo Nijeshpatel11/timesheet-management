@@ -1,0 +1,168 @@
+/* timesheet-form.css */
+.timesheet-form {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    /* To make it responsive, we'll set a max-width for smaller screens */
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.time-format-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.time-format-toggle button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.time-format-toggle button:hover {
+    background-color: #0056b3;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    min-width: 120px;
+}
+
+input[type="time"], input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.break-section {
+    margin-top: 20px;
+}
+
+.break-input-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.break-input-container label {
+    min-width: 150px;
+}
+
+.break-list-container {
+    margin-top: 20px;
+}
+
+.break-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.break-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.break-list button {
+    padding: 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.break-list button:hover {
+    background-color: #d32f2f;
+}
+
+.total-time-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#add-break-btn {
+    align-self: flex-end;
+    padding: 10px 20px;
+}
+
+.calculate-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.break-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; /* This will make elements wrap if they exceed the container's width */
+}
+
+input[type="time"], input[type="text"] {
+    width: 150px; /* Reduce width slightly to fit in the container */
+}
+
+#add-break-btn {
+    padding: 10px 20px;
+    margin-left: auto; /* Align the button to the right */
+    align-self: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    input[type="time"], input[type="text"] {
+        width: 100%; /* Full width for inputs */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .break-input-container {
+        flex-direction: column; /* Stack break inputs vertically */
+        gap: 10px; /* Reduce gap between break inputs */
+    }
+
+    .time-format-toggle {
+        flex-direction: column; /* Stack time format buttons */
+        gap: 10px; /* Add gap between buttons */
+    }
+
+    .break-list li {
+        flex-direction: column; /* Stack break list items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+}
